@@ -1,10 +1,10 @@
 import React from 'react';
 import PokemonItem from './PokemonItem.js';
-import Spinner from 'react-spinkit';
+import Loader from './Loader.js';
 
 export default function PokemonList({ pokemons, loading, onPokemonClick }){
   if( loading ){
-    return <Spinner spinnerName='double-bounce' />
+    return <Loader />
   }else{
     return(
       <div>
