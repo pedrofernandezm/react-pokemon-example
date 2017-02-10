@@ -32,7 +32,7 @@ describe('PokemonProfile with a pokemon', () => {
   });
 
   it('renders without crashing', () => {
-    expect(shallow(component).contains(<h1>Pikachu</h1>)).toBe(true);
+    expect(shallow(component).contains(<h2>Pikachu</h2>)).toBe(true);
   });
 
   it('does not render the spinner', () => {
@@ -54,6 +54,6 @@ describe('PokemonProfile without a pokemon', () => {
   });
 
   it('renders text advicing selection', () => {
-    expect(shallow(component).contains(<p>Please select a pokemon from the list</p>)).toBe(true);
+    expect(shallow(component).contains(<h2>Please select a pokemon from the list</h2>)).toBe(true);
   });
 });
