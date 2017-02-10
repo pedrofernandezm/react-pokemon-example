@@ -43,5 +43,17 @@ describe('PokemonProfile with a pokemon', () => {
     expect(shallow(component).contains(<Stats pokemon={pokemon} />)).toBe(true);
   });
 
+});
 
+describe('PokemonProfile without a pokemon', () => {
+
+  beforeEach( () => {
+    pokemon = null;
+    loading = false;
+    component = <PokemonProfile pokemon={pokemon} loading={loading}/>;
+  });
+
+  it('renders text advicing selection', () => {
+    expect(shallow(component).contains(<p>Please select a pokemon from the list</p>)).toBe(true);
+  });
 });
