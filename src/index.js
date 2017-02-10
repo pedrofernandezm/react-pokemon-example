@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 ReactDOM.render(
-  <div className="row">
+  <div className="row container-fluid">
     <Pokedex />
   </div>
   , document.getElementById('root')

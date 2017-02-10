@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Stats({ pokemon }){
   return(
-    <div>
-      <h1>Stats</h1>
-      <table class="table">
+    <div className="text-left">
+      <h3>Stats</h3>
+      <table className="table table-bordered table-striped">
         <thead>
           <tr>
             <th>Name</th>
