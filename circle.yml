@@ -1,8 +1,6 @@
 machine:
   node:
     version: 6.1.0
-  yarn:
-    version: 0.18.1
 general:
   branches:
     only:
