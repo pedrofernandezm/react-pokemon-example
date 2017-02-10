@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 6.1.0
+  yarn:
+    version: 0.18.1
+general:
+  branches:
+    only:
+      - master
+dependencies:
+  cache_directories:
+    - ~/.cache/yarn
+  override:
+    - yarn install
+test:
+  override:
+    - yarn run test
+deployment:
+  production:
+    branch: master
+    commands:
+      - yarn run build
+      - surge --project ./build --domain $SURGE_DOMAIN
