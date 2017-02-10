@@ -9,6 +9,7 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
   override:
+    - yarn global add surge
     - yarn install
 test:
   override:
